@@ -1,0 +1,8 @@
+{
+  "name": "erika-adriano-site",
+  "private": true,
+  "description": "Dependências das Netlify Functions (lista de presentes)",
+  "dependencies": {
+    "@netlify/blobs": "^10.3.5"
+  }
+}

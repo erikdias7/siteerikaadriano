@@ -1,0 +1,1977 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Save the Date Erika e Adriano</title>
+  <meta name="description" content="Erika e Adriano convidam para o casamento e Bodas de Prata — 16 de dezembro de 2026, às 19h, na Matriz de Santo Antônio de Barbalha (CE).">
+
+
+  <!-- Preview ao compartilhar no WhatsApp / redes -->
+  <meta property="og:title" content="Casamento Erika & Adriano" />
+  <meta property="og:description" content="Confira todos os detalhes do nosso casamento e confirme sua presença!" />
+  <meta property="og:image" content="https://thriving-mermaid-172fc1.netlify.app/preview-whatsapp.jpg" />
+  <meta property="og:image:type" content="base.jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Erika &amp; Adriano">
+  <meta property="og:title" content="Erika e Adriano — Casamento e Bodas de Prata">
+  <meta property="og:description" content="Convidam para o casamento em 16 de dezembro de 2026, às 19h, na Matriz de Santo Antônio de Barbalha (CE). Confirme sua presença!">
+  <meta property="og:image" content="https://thriving-mermaid-172fc1.netlify.app/base.jpeg">
+  <meta property="og:image:secure_url" content="https://thriving-mermaid-172fc1.netlify.app/base.jpeg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1080">
+  <meta property="og:image:height" content="1920">
+  <meta property="og:url" content="https://thriving-mermaid-172fc1.netlify.app/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Erika e Adriano — Casamento e Bodas de Prata">
+  <meta name="twitter:description" content="16 de dezembro de 2026, às 19h — Matriz de Santo Antônio de Barbalha (CE).">
+  <meta name="twitter:image" content="https://thriving-mermaid-172fc1.netlify.app/base.jpeg">
+  <link rel="image_src" href="https://thriving-mermaid-172fc1.netlify.app/base.jpeg">
+
+  <!-- Google Fonts: Cormorant Garamond & Great Vibes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Great+Vibes&display=swap">
+
+  <!-- Allowed Basecoat UI & Shell styles -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basecoat-css@1.0.2/dist/basecoat.cdn.min.css">
+  <style>
+/* Skip artifact shell — fixed styles served beside every artifact.
+   Complements basecoat; artifacts override --accent for their own identity. */
+:root {
+  color-scheme: light dark;
+  --accent: #2563eb;
+  --accent-contrast: #ffffff;
+  --accent-text: color-mix(in srgb, var(--accent) 72%, #000);
+  --bg: #f8f9fb;
+  --surface: #ffffff;
+  --text: #14171f;
+  --text-muted: #5b6472;
+  --border: rgba(20, 23, 31, 0.10);
+  --radius: 10px;
+  --shadow: 0 1px 3px rgba(20, 23, 31, 0.08);
+  --space: 16px;
+}
+/* Theme resolution. Without data-theme the viewer's system preference decides,
+   as it always did. With it, the artifact's own choice wins in BOTH directions:
+   a page that hardcodes one palette must not be handed the opposite set of
+   tokens by the machine it happens to be opened on. The dark values appear
+   twice because a media query cannot be folded into a selector list.
+   The attribute sits inside :where() so these blocks keep the specificity of a
+   bare :root — the page's own <style> is linked after this file and must go on
+   overriding any token it wants, exactly as it could before. */
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-theme="light"])) {
+    --accent-text: color-mix(in srgb, var(--accent) 78%, #fff);
+    --bg: #101318;
+    --surface: #181c23;
+    --text: #eef1f6;
+    --text-muted: #9aa4b2;
+    --border: rgba(238, 241, 246, 0.12);
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  }
+}
+:root:where([data-theme="dark"]) {
+  color-scheme: dark;
+  --accent-text: color-mix(in srgb, var(--accent) 78%, #fff);
+  --bg: #101318;
+  --surface: #181c23;
+  --text: #eef1f6;
+  --text-muted: #9aa4b2;
+  --border: rgba(238, 241, 246, 0.12);
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+:root:where([data-theme="light"]) { color-scheme: light; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; display: block; }
+
+.shell-container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+.shell-section { padding: calc(var(--space) * 2) 0; }
+.shell-grid { display: grid; gap: var(--space); grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.shell-toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: var(--space); }
+.shell-footer { padding: 24px 0 40px; color: var(--text-muted); font-size: 13px; }
+
+.shell-hero { padding: calc(var(--space) * 3) 0 calc(var(--space) * 2); }
+.shell-hero h1 { font-size: clamp(26px, 4vw, 40px); line-height: 1.15; margin: 0 0 10px; text-wrap: balance; }
+.shell-hero p { color: var(--text-muted); max-width: 60ch; margin: 0; }
+
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: var(--space);
+}
+
+.kpi { display: flex; flex-direction: column; gap: 4px; }
+.kpi .kpi-value { font-size: 28px; font-weight: 650; line-height: 1.1; }
+.kpi .kpi-label { font-size: 13px; color: var(--text-muted); }
+.kpi .kpi-delta { font-size: 12.5px; font-weight: 600; }
+.kpi .kpi-delta.up { color: #0a8f3c; }
+.kpi .kpi-delta.down { color: #cf3131; }
+
+table.shell-table { border-collapse: collapse; width: 100%; font-size: 14px; }
+table.shell-table th {
+  text-align: left; font-size: 11.5px; letter-spacing: 0.05em; text-transform: uppercase;
+  color: var(--text-muted); font-weight: 600;
+}
+table.shell-table th, table.shell-table td { padding: 9px 12px 9px 0; border-bottom: 1px solid var(--border); }
+table.shell-table td.num, table.shell-table th.num { text-align: right; font-variant-numeric: tabular-nums; }
+table.shell-table tbody tr:hover { background: color-mix(in srgb, var(--accent) 6%, transparent); }
+
+.chart-box { width: 100%; min-height: 220px; }
+.chart-box svg { width: 100%; height: auto; display: block; }
+
+.muted { color: var(--text-muted); }
+.accent { color: var(--accent-text); }
+.shell-badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 999px;
+  background: color-mix(in srgb, var(--accent) 12%, transparent); color: var(--accent-text);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .shell-fade { animation: shell-fade 400ms ease both; }
+  @keyframes shell-fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+}
+
+</style>
+  
+
+  <style>
+    :root {
+      --accent: #B76E58;
+      --accent-text: #964f3c;
+      --accent-contrast: #FFFFFF;
+      --color-rose-baby: #F5C6D6;
+      --color-fuchsia: #C94F7C;
+      --color-lilac: #C0A3D8;
+      --color-lilac-soft: #F2ECF7;
+      --color-lavender: #A9A3C9;
+      --color-green-leaf: #7FA36B;
+      --color-copper: #B76E58;
+      --color-copper-dark: #8E4C38;
+      --color-copper-light: #E7C9BE;
+      --color-text-main: #4A3B45;
+      --color-text-muted: #6C5B66;
+      --color-bg-page: #FDFBF8;
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-script: 'Great Vibes', cursive;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    body {
+      background-color: var(--color-bg-page);
+      color: var(--color-text-main);
+      font-family: var(--font-serif);
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Falling Petals Background Canvas */
+    #petals-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    /* Ambient watercolor background textures */
+    .page-wrap {
+      position: relative;
+      background:
+        radial-gradient(ellipse at 10% 15%, rgba(245, 198, 214, 0.28) 0%, transparent 55%),
+        radial-gradient(ellipse at 90% 40%, rgba(192, 163, 216, 0.22) 0%, transparent 50%),
+        radial-gradient(ellipse at 25% 75%, rgba(245, 198, 214, 0.2) 0%, transparent 60%),
+        radial-gradient(ellipse at 85% 90%, rgba(127, 163, 107, 0.12) 0%, transparent 45%),
+        var(--color-bg-page);
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    /* Section scroll animation */
+    .fade-in-section {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.9s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.9s cubic-bezier(0.2, 0.8, 0.2, 1);
+      will-change: opacity, transform;
+    }
+
+    .fade-in-section.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Hero Section */
+    .hero-section {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 3.5rem 1.25rem 2.5rem;
+      position: relative;
+      box-sizing: border-box;
+    }
+
+    .monogram-container {
+      position: relative;
+      width: 170px;
+      height: 170px;
+      margin: 0 auto 1.5rem;
+      animation: monogramEntrance 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    @keyframes monogramEntrance {
+      0% {
+        opacity: 0;
+        transform: scale(0.85);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .monogram-glow {
+      position: absolute;
+      inset: -8px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(183, 110, 88, 0.22) 0%, rgba(245, 198, 214, 0.3) 50%, transparent 70%);
+      animation: softGlow 4s ease-in-out infinite alternate;
+      z-index: 1;
+    }
+
+    @keyframes softGlow {
+      0% {
+        transform: scale(0.96);
+        opacity: 0.55;
+      }
+      100% {
+        transform: scale(1.08);
+        opacity: 0.9;
+      }
+    }
+
+    .monogram-img {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 50%;
+      z-index: 2;
+      box-shadow: 0 10px 30px -8px rgba(183, 110, 88, 0.25);
+    }
+
+    .badge-std {
+      display: inline-block;
+      font-family: var(--font-serif);
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: var(--color-copper-dark);
+      margin-bottom: 0.75rem;
+      padding: 0.25rem 1rem;
+      border-top: 1px solid var(--color-copper-light);
+      border-bottom: 1px solid var(--color-copper-light);
+    }
+
+    .couple-names {
+      font-family: var(--font-script);
+      font-size: clamp(3rem, 9vw, 5.25rem);
+      font-weight: 400;
+      line-height: 1.15;
+      color: var(--color-copper-dark);
+      margin: 0.2rem 0 0.5rem;
+      text-shadow: 0 2px 14px rgba(201, 79, 124, 0.12);
+    }
+
+    .couple-names span {
+      display: inline-block;
+      font-family: var(--font-serif);
+      font-size: 0.6em;
+      font-style: italic;
+      color: var(--color-fuchsia);
+      margin: 0 0.4rem;
+      vertical-align: middle;
+    }
+
+    .hero-date {
+      font-family: var(--font-serif);
+      font-size: clamp(1.15rem, 3.2vw, 1.45rem);
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      color: var(--color-text-main);
+      margin: 0.6rem 0 1rem;
+    }
+
+    .hero-silver-sub {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.95rem;
+      font-style: italic;
+      color: var(--color-text-muted);
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-divider {
+      width: 140px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--color-copper), transparent);
+      margin: 0.5rem auto 1.75rem;
+    }
+
+    .scroll-hint {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      color: var(--color-copper);
+      text-decoration: none;
+      font-size: 0.8rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      gap: 0.4rem;
+      opacity: 0.85;
+      transition: opacity 0.3s, transform 0.3s;
+      margin-top: 0.75rem;
+    }
+
+    .scroll-hint:hover {
+      opacity: 1;
+      transform: translateY(3px);
+    }
+
+    .scroll-icon {
+      width: 20px;
+      height: 20px;
+      animation: bounceGentle 2s infinite ease-in-out;
+    }
+
+    @keyframes bounceGentle {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(6px); }
+    }
+
+    /* Common Section Styles */
+    .section-wrap {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 4.5rem 1.25rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 2.75rem;
+    }
+
+    .section-tag {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--color-copper-dark);
+      display: block;
+      margin-bottom: 0.4rem;
+    }
+
+    .section-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 4.5vw, 2.75rem);
+      font-weight: 500;
+      color: var(--color-text-main);
+      margin: 0;
+      line-height: 1.2;
+    }
+
+    .section-divider-ornament {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      margin-top: 0.75rem;
+      color: var(--color-copper);
+    }
+
+    .section-divider-ornament::before,
+    .section-divider-ornament::after {
+      content: "";
+      width: 48px;
+      height: 1px;
+      background: var(--color-copper-light);
+    }
+
+    /* Artwork Section */
+    .artwork-card {
+      max-width: 440px;
+      margin: 0 auto;
+      background: #FFFFFF;
+      padding: 14px 14px 22px;
+      border-radius: 12px;
+      border: 1px solid rgba(183, 110, 88, 0.35);
+      box-shadow:
+        0 14px 34px -10px rgba(183, 110, 88, 0.16),
+        0 4px 12px rgba(74, 59, 69, 0.05);
+      text-align: center;
+      position: relative;
+    }
+
+    .artwork-inner-frame {
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid rgba(245, 198, 214, 0.7);
+      background-color: #FAF6F4;
+      aspect-ratio: 2 / 3;
+    }
+
+    .artwork-img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* Image must remain pristine, no filters or tone adjustments as strictly requested */
+      image-rendering: auto;
+    }
+
+    .artwork-caption {
+      margin-top: 1.25rem;
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 1.15rem;
+      color: var(--color-text-main);
+      line-height: 1.45;
+      padding: 0 0.75rem;
+    }
+
+    .artwork-caption span {
+      display: block;
+      font-size: 0.85rem;
+      font-style: normal;
+      color: var(--color-copper-dark);
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      margin-top: 0.35rem;
+    }
+
+    /* Details Cards Section */
+    .details-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.75rem;
+      margin-top: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .details-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .detail-card {
+      background: #FFFFFF;
+      border: 1.5px solid var(--color-rose-baby);
+      border-radius: 16px;
+      padding: 2.25rem 1.75rem;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 8px 24px -6px rgba(192, 163, 216, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .detail-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 32px -8px rgba(183, 110, 88, 0.22);
+    }
+
+    .detail-card-top {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .detail-icon-circle {
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, rgba(245, 198, 214, 0.35), rgba(192, 163, 216, 0.3));
+      border: 1px solid var(--color-copper-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+      color: var(--color-copper-dark);
+    }
+
+    .detail-card h3 {
+      font-family: var(--font-serif);
+      font-size: 1.65rem;
+      font-weight: 600;
+      color: var(--color-text-main);
+      margin: 0 0 0.5rem;
+    }
+
+    .detail-datetime {
+      display: inline-block;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--color-copper-dark);
+      background-color: var(--color-lilac-soft);
+      padding: 0.35rem 0.9rem;
+      border-radius: 20px;
+      margin-bottom: 1.15rem;
+    }
+
+    .detail-venue-name {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--color-text-main);
+      margin: 0 0 0.35rem;
+    }
+
+    .detail-venue-address {
+      font-size: 0.98rem;
+      color: var(--color-text-muted);
+      margin: 0 0 1.5rem;
+      line-height: 1.5;
+    }
+
+    .detail-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--font-serif);
+      font-size: 0.92rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      color: var(--color-copper-dark);
+      background: #FFFFFF;
+      border: 1px solid var(--color-copper);
+      border-radius: 24px;
+      padding: 0.55rem 1.35rem;
+      text-decoration: none;
+      transition: all 0.25s ease;
+    }
+
+    .detail-btn:hover {
+      background: var(--color-copper);
+      color: #FFFFFF;
+      box-shadow: 0 4px 12px rgba(183, 110, 88, 0.3);
+    }
+
+    /* Bodas de Prata Section */
+    .silver-jubilee-section {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(242, 236, 247, 0.6) 50%, rgba(255, 255, 255, 0.7) 100%);
+      border-top: 1px solid rgba(183, 110, 88, 0.2);
+      border-bottom: 1px solid rgba(183, 110, 88, 0.2);
+      padding: 4.5rem 1.25rem;
+      position: relative;
+    }
+
+    .silver-jubilee-card {
+      max-width: 680px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 2rem 1.5rem;
+      position: relative;
+    }
+
+    .silver-number-wrap {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
+
+    .silver-number {
+      font-family: var(--font-serif);
+      font-size: clamp(4.5rem, 12vw, 6.75rem);
+      font-weight: 700;
+      line-height: 1;
+      color: #71717A;
+      background: linear-gradient(135deg, #E2E8F0 0%, #94A3B8 28%, #475569 55%, #CBD5E1 78%, #64748B 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 4px 14px rgba(71, 85, 105, 0.22));
+    }
+
+    .silver-rings-icon {
+      position: absolute;
+      bottom: -6px;
+      right: -10px;
+      color: #D4AF37;
+    }
+
+    .silver-tag {
+      font-family: var(--font-serif);
+      font-size: clamp(1.4rem, 3.5vw, 1.85rem);
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #52525B;
+      margin: 0.5rem 0 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+    }
+
+    .silver-tag::before,
+    .silver-tag::after {
+      content: "";
+      width: 32px;
+      height: 1px;
+      background: #A1A1AA;
+    }
+
+    .silver-text {
+      font-family: var(--font-serif);
+      font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+      line-height: 1.7;
+      color: var(--color-text-main);
+      max-width: 580px;
+      margin: 0 auto 1.5rem;
+      font-style: italic;
+    }
+
+    .silver-quote-author {
+      font-family: var(--font-serif);
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      color: var(--color-copper-dark);
+    }
+
+    /* Lista de presentes CTA */
+    .gifts-cta-section {
+      padding: 3.5rem 1.25rem 1rem;
+      text-align: center;
+    }
+
+    .gifts-cta-card {
+      max-width: 520px;
+      margin: 0 auto;
+      padding: 2.25rem 1.75rem;
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid rgba(183, 110, 88, 0.28);
+      border-radius: 20px;
+      box-shadow: 0 12px 36px rgba(74, 59, 69, 0.08);
+    }
+
+    .gifts-cta-tag {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--color-copper);
+      margin-bottom: 0.55rem;
+    }
+
+    .gifts-cta-title {
+      font-family: var(--font-script);
+      font-size: clamp(2rem, 5.5vw, 2.6rem);
+      color: var(--color-copper-dark);
+      margin: 0 0 0.75rem;
+      font-weight: 400;
+      line-height: 1.15;
+    }
+
+    .gifts-cta-text {
+      font-size: 1.02rem;
+      color: var(--color-text-muted);
+      margin: 0 0 1.5rem;
+      line-height: 1.55;
+    }
+
+    .gifts-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.55rem;
+      padding: 0.8rem 1.85rem;
+      font-family: var(--font-serif);
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #fff;
+      background: var(--color-copper);
+      border-radius: 999px;
+      box-shadow: 0 6px 18px rgba(183, 110, 88, 0.32);
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .gifts-cta-btn:hover {
+      background: var(--color-copper-dark);
+      transform: translateY(-1px);
+      color: #fff;
+    }
+
+    /* RSVP / WhatsApp */
+    .rsvp-block {
+      margin: 2.75rem auto 2rem;
+      max-width: 420px;
+      padding: 0 0.25rem;
+    }
+
+    .rsvp-label {
+      display: block;
+      font-family: var(--font-serif);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--color-copper);
+      margin-bottom: 0.65rem;
+    }
+
+    .rsvp-title {
+      font-family: var(--font-script);
+      font-size: clamp(2.1rem, 6vw, 2.75rem);
+      font-weight: 400;
+      line-height: 1.15;
+      color: var(--color-fuchsia);
+      margin: 0 0 0.65rem;
+    }
+
+    .rsvp-sub {
+      font-family: var(--font-serif);
+      font-size: 0.98rem;
+      color: var(--color-text-muted);
+      margin: 0 0 1.35rem;
+      line-height: 1.55;
+    }
+
+    .rsvp-input {
+      display: block;
+      width: 100%;
+      max-width: 340px;
+      margin: 0 auto 1.5rem;
+      padding: 0.7rem 1.25rem;
+      font-family: var(--font-serif);
+      font-size: 1rem;
+      text-align: center;
+      color: var(--color-text-main);
+      background: rgba(255, 255, 255, 0.85);
+      border: 1px solid var(--color-copper-light);
+      border-radius: 999px;
+      outline: none;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .rsvp-input::placeholder {
+      color: color-mix(in srgb, var(--color-copper) 55%, #fff);
+    }
+
+    .rsvp-input:focus {
+      border-color: var(--color-copper);
+      box-shadow: 0 0 0 3px rgba(183, 110, 88, 0.15);
+    }
+
+    .rsvp-qr-link {
+      display: inline-block;
+      margin: 0 auto 0.75rem;
+      padding: 0.65rem;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 18px rgba(74, 59, 69, 0.08);
+      line-height: 0;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .rsvp-qr-link:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 22px rgba(74, 59, 69, 0.12);
+    }
+
+    .rsvp-qr {
+      width: 200px;
+      height: 200px;
+      display: block;
+    }
+
+    .rsvp-qr-hint {
+      font-family: var(--font-serif);
+      font-size: 0.88rem;
+      color: var(--color-copper);
+      margin: 0 0 1.35rem;
+    }
+
+    .rsvp-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: min(100%, 320px);
+      padding: 0.75rem 1.75rem;
+      font-family: var(--font-serif);
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--color-copper-dark);
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid var(--color-copper);
+      border-radius: 999px;
+      cursor: pointer;
+      transition: background 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .rsvp-btn:hover {
+      background: var(--color-copper);
+      color: #ffffff;
+      box-shadow: 0 4px 14px rgba(183, 110, 88, 0.28);
+    }
+
+    /* Countdown Section */
+    .countdown-section {
+      text-align: center;
+      padding: 4.5rem 1.25rem;
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    .countdown-title {
+      font-family: var(--font-serif);
+      font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+      font-weight: 500;
+      color: var(--color-text-main);
+      margin-bottom: 2rem;
+    }
+
+    .countdown-title em {
+      font-family: var(--font-script);
+      font-size: 1.3em;
+      font-style: normal;
+      color: var(--color-fuchsia);
+      margin-left: 0.35rem;
+    }
+
+    .countdown-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.15rem;
+      margin-bottom: 2.25rem;
+    }
+
+    @media (max-width: 540px) {
+      .countdown-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.9rem;
+      }
+    }
+
+    .countdown-card {
+      background: var(--color-lilac-soft);
+      border: 1px solid rgba(192, 163, 216, 0.55);
+      border-radius: 14px;
+      padding: 1.4rem 0.75rem 1.1rem;
+      box-shadow: 0 6px 18px -4px rgba(192, 163, 216, 0.25);
+      transition: transform 0.25s ease;
+    }
+
+    .countdown-card:hover {
+      transform: translateY(-2px);
+    }
+
+    .countdown-num {
+      display: block;
+      font-family: var(--font-serif);
+      font-size: clamp(2.2rem, 5.5vw, 3.25rem);
+      font-weight: 700;
+      line-height: 1;
+      color: var(--color-copper-dark);
+      font-variant-numeric: tabular-nums;
+      margin-bottom: 0.4rem;
+    }
+
+    .countdown-lbl {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+    }
+
+    /* Actions / Calendar buttons */
+    .calendar-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.9rem;
+      margin-top: 1rem;
+    }
+
+    .btn-wedding {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.6rem;
+      border-radius: 30px;
+      font-family: var(--font-serif);
+      font-size: 0.98rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      border: none;
+    }
+
+    .btn-wedding-primary {
+      background: var(--color-copper);
+      color: #FFFFFF;
+      box-shadow: 0 6px 18px -4px rgba(183, 110, 88, 0.45);
+    }
+
+    .btn-wedding-primary:hover {
+      background: var(--color-copper-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 22px -4px rgba(183, 110, 88, 0.55);
+    }
+
+    .btn-wedding-secondary {
+      background: #FFFFFF;
+      color: var(--color-copper-dark);
+      border: 1px solid var(--color-copper-light);
+      box-shadow: 0 4px 12px rgba(74, 59, 69, 0.05);
+    }
+
+    .btn-wedding-secondary:hover {
+      background: var(--color-lilac-soft);
+      border-color: var(--color-copper);
+    }
+
+    /* Footer */
+    .footer-section {
+      background: #FFFFFF;
+      border-top: 1px solid rgba(245, 198, 214, 0.6);
+      text-align: center;
+      padding: 3.5rem 1.25rem 3rem;
+      position: relative;
+    }
+
+    .footer-monogram {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      margin: 0 auto 1.25rem;
+      box-shadow: 0 4px 14px rgba(183, 110, 88, 0.15);
+      display: block;
+    }
+
+    .footer-signature {
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      color: var(--color-copper-dark);
+      margin: 0 0 0.5rem;
+      letter-spacing: 0.06em;
+    }
+
+    .footer-names {
+      font-family: var(--font-script);
+      font-size: 2.35rem;
+      color: var(--color-fuchsia);
+      margin: 0 0 0.75rem;
+      line-height: 1.2;
+    }
+
+    .footer-msg {
+      font-size: 1rem;
+      font-style: italic;
+      color: var(--color-text-muted);
+      max-width: 440px;
+      margin: 0 auto 1.5rem;
+    }
+
+    .footer-sub {
+      font-size: 0.78rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+      opacity: 0.8;
+      border-top: 1px solid #F0EAE6;
+      padding-top: 1.5rem;
+      max-width: 320px;
+      margin: 0 auto;
+    }
+
+    /* Reduced Motion Accessibility */
+    @media (prefers-reduced-motion: reduce) {
+      *, ::before, ::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+      #petals-canvas {
+        display: none !important;
+      }
+      .fade-in-section {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    }
+
+    #site-audio {
+      position: fixed;
+      width: 0;
+      height: 0;
+      opacity: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    /* Entrada com trilha sonora (exigência dos navegadores) */
+    .audio-entry-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      background:
+        radial-gradient(ellipse at 50% 30%, rgba(245, 198, 214, 0.45) 0%, transparent 55%),
+        rgba(253, 251, 248, 0.94);
+      backdrop-filter: blur(6px);
+      transition: opacity 0.55s ease, visibility 0.55s ease;
+    }
+
+    .audio-entry-overlay.is-hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .audio-entry-card {
+      max-width: 380px;
+      width: 100%;
+      text-align: center;
+      padding: 2.25rem 1.75rem 2rem;
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid rgba(183, 110, 88, 0.25);
+      border-radius: 20px;
+      box-shadow: 0 18px 48px rgba(74, 59, 69, 0.12);
+    }
+
+    .audio-entry-tag {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--color-copper-dark);
+      margin-bottom: 0.75rem;
+    }
+
+    .audio-entry-names {
+      font-family: var(--font-script);
+      font-size: clamp(2.4rem, 8vw, 3.1rem);
+      font-weight: 400;
+      line-height: 1.1;
+      color: var(--color-copper-dark);
+      margin: 0 0 0.85rem;
+    }
+
+    .audio-entry-hint {
+      font-size: 0.98rem;
+      color: var(--color-text-muted);
+      margin: 0 0 1.5rem;
+      line-height: 1.55;
+    }
+
+    .audio-entry-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 200px;
+      padding: 0.8rem 2rem;
+      font-family: var(--font-serif);
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #ffffff;
+      background: var(--color-copper);
+      border: none;
+      border-radius: 999px;
+      cursor: pointer;
+      box-shadow: 0 6px 20px rgba(183, 110, 88, 0.35);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+
+    .audio-entry-btn:hover {
+      background: var(--color-copper-dark);
+      transform: translateY(-1px);
+      box-shadow: 0 8px 24px rgba(183, 110, 88, 0.4);
+    }
+
+    .site-music-toggle {
+      position: fixed;
+      bottom: 1.15rem;
+      right: 1.15rem;
+      z-index: 25;
+      width: 46px;
+      height: 46px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      border: 1px solid var(--color-copper-light);
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.92);
+      color: var(--color-copper-dark);
+      cursor: pointer;
+      box-shadow: 0 4px 16px rgba(74, 59, 69, 0.12);
+      transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    }
+
+    .site-music-toggle:hover {
+      background: var(--color-copper);
+      color: #ffffff;
+      transform: scale(1.04);
+    }
+
+    .site-music-toggle.is-muted {
+      opacity: 0.72;
+    }
+
+    .site-music-toggle svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    /* Print styles */
+    @media print {
+      #petals-canvas,
+      .scroll-hint,
+      .calendar-actions,
+      .detail-btn,
+      .audio-entry-overlay,
+      .site-music-toggle,
+      #site-audio {
+        display: none !important;
+      }
+      .page-wrap {
+        background: #FFFFFF !important;
+      }
+      .fade-in-section {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Trilha sonora — video oculto (mp4 funciona melhor que audio em vários navegadores) -->
+  <video
+    id="site-audio"
+    playsinline
+    webkit-playsinline
+    loop
+    preload="auto"
+    aria-hidden="true"
+    tabindex="-1"
+  >
+    <source src="audiobase.mp4" type="video/mp4">
+  </video>
+
+  <div id="audio-entry-overlay" class="audio-entry-overlay" role="dialog" aria-modal="true" aria-labelledby="audio-entry-title">
+    <div class="audio-entry-card">
+      <span class="audio-entry-tag">Save the Date</span>
+      <h2 id="audio-entry-title" class="audio-entry-names">Erika &amp; Adriano</h2>
+      <p class="audio-entry-hint">Toque em entrar para abrir o convite com a trilha sonora.</p>
+      <button type="button" class="audio-entry-btn" id="btn-audio-enter">Entrar</button>
+    </div>
+  </div>
+
+  <button type="button" class="site-music-toggle" id="btn-music-toggle" hidden aria-label="Silenciar trilha sonora" aria-pressed="false">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M9 18V5l12-2v13"></path>
+      <circle cx="6" cy="18" r="3"></circle>
+      <circle cx="18" cy="16" r="3"></circle>
+    </svg>
+  </button>
+
+  <!-- Canvas for delicate falling petals -->
+  <canvas id="petals-canvas" aria-hidden="true"></canvas>
+
+  <div class="page-wrap">
+    <!-- HERO SECTION -->
+    <header class="hero-section" id="hero">
+      <div class="monogram-container">
+        <div class="monogram-glow" aria-hidden="true"></div>
+        <img
+          src="logo.png"
+          alt="Monograma oficial de Erika e Adriano com o número 25 das Bodas de Prata"
+          class="monogram-img"
+          width="170"
+          height="170"
+          loading="eager"
+        >
+      </div>
+
+      <div class="badge-std">Save the Date</div>
+
+      <h1 class="couple-names">
+        Erika <span>&amp;</span> Adriano
+      </h1>
+
+      <div class="hero-silver-sub">
+        <span>Celebrando 25 anos de amor e união</span>
+      </div>
+
+      <div class="hero-divider" aria-hidden="true"></div>
+
+      <div class="hero-date">
+        16 de dezembro de 2026 &bull; 19h
+      </div>
+
+      <a href="#arte" class="scroll-hint" aria-label="Rolar para ver mais detalhes">
+        <span>Conheça os Detalhes</span>
+        <svg class="scroll-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </a>
+    </header>
+
+    <!-- SECTION 2: WATERCOLOR ARTWORK -->
+    <section class="section-wrap fade-in-section" id="arte" aria-labelledby="art-title">
+      <div class="section-header">
+        <span class="section-tag">Nossa Bênção</span>
+        <h2 id="art-title" class="section-title">O Sagrado Encontro</h2>
+        <div class="section-divider-ornament" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="artwork-card">
+        <div class="artwork-inner-frame">
+          <img
+            src="foto1.jpeg"
+            alt="Arte aquarelada do casal Erika e Adriano de mãos dadas diante da igreja colonial de Santo Antônio"
+            class="artwork-img"
+            width="400"
+            height="600"
+            loading="lazy"
+          >
+        </div>
+        <p class="artwork-caption">
+          "25 anos de história, abençoados diante do altar"
+          <span>Matriz de Santo Antônio de Barbalha (CE)</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 3: EVENT DETAILS -->
+    <section class="section-wrap fade-in-section" id="detalhes" aria-labelledby="details-title">
+      <div class="section-header">
+        <span class="section-tag">Programação</span>
+        <h2 id="details-title" class="section-title">Onde e Quando</h2>
+        <div class="section-divider-ornament" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+        </div>
+      </div>
+
+      <div class="details-grid">
+        <!-- Card 1: Cerimônia -->
+        <article class="detail-card">
+          <div class="detail-card-top">
+            <div class="detail-icon-circle" aria-hidden="true">
+              <!-- Church SVG Icon -->
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2v5M10 4h4"></path>
+                <path d="M12 7 3 13v9h18v-9L12 7z"></path>
+                <path d="M10 22v-6a2 2 0 0 1 4 0v6"></path>
+                <path d="M12 10a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"></path>
+              </svg>
+            </div>
+            <h3>Cerimônia Religiosa</h3>
+            <span class="detail-datetime">16 de Dezembro de 2026 &bull; 19h</span>
+            <div class="detail-venue-name">Matriz de Santo Antônio de Barbalha (CE)</div>
+            <p class="detail-venue-address">
+              Rua da Matriz, Centro
+            </p>
+          </div>
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Matriz+de+Santo+Ant%C3%B4nio+de+Barbalha+CE"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="detail-btn"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            Como Chegar
+          </a>
+        </article>
+
+        <!-- Card 2: Recepção -->
+        <article class="detail-card">
+          <div class="detail-card-top">
+            <div class="detail-icon-circle" aria-hidden="true">
+              <!-- Toasting Glasses SVG Icon -->
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M8 22h8"></path>
+                <path d="M12 15v7"></path>
+                <path d="M16 3l1 7a4 4 0 0 1-4 4h-2a4 4 0 0 1-4-4l1-7h10z"></path>
+                <path d="M6 3h12"></path>
+                <path d="M8.5 7.5h7"></path>
+              </svg>
+            </div>
+            <h3>Recepção</h3>
+            <span class="detail-datetime">Após a cerimônia religiosa</span>
+            <div class="detail-venue-name">Romano's Buffet</div>
+            <p class="detail-venue-address">
+              Rua Madre Maria Nely Sobreira, 305 - Limoeiro<br>
+              Juazeiro do Norte (CE)
+            </p>
+          </div>
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Romano%27s+Buffet+Rua+Madre+Maria+Nely+Sobreira+305+Limoeiro+Juazeiro+do+Norte+CE"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="detail-btn"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            Como Chegar
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECTION 4: BODAS DE PRATA -->
+    <section class="silver-jubilee-section fade-in-section" id="bodas" aria-labelledby="silver-title">
+      <div class="silver-jubilee-card">
+        <div class="silver-number-wrap">
+          <div class="silver-number" aria-hidden="true">25</div>
+          <svg class="silver-rings-icon" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <circle cx="8.5" cy="14" r="5.5"></circle>
+            <circle cx="15.5" cy="10" r="5.5"></circle>
+          </svg>
+        </div>
+
+        <h2 id="silver-title" class="silver-tag">Bodas de Prata</h2>
+
+        <p class="silver-text">
+          &ldquo;Em dezembro de 2026 completamos 25 anos de casamento, e o nosso casamento religioso será a celebração dessa caminhada.&rdquo;
+        </p>
+
+        <div class="rsvp-block" id="rsvp" aria-labelledby="rsvp-title">
+          <span class="rsvp-label">R.S.V.P.</span>
+          <h3 id="rsvp-title" class="rsvp-title">Confirme sua presença</h3>
+          <p class="rsvp-sub">Sua presença tornará esse dia ainda mais especial.</p>
+          <label class="sr-only" for="rsvp-name">Seu nome (opcional)</label>
+          <input type="text" id="rsvp-name" class="rsvp-input" placeholder="Seu nome (opcional)" autocomplete="name" maxlength="80">
+          <a href="https://wa.me/558888745987" target="_blank" rel="noopener noreferrer" class="rsvp-qr-link" aria-label="Abrir WhatsApp para confirmar presença">
+            <img src="whatsapp-qr.png" alt="QR code para confirmar presença pelo WhatsApp" class="rsvp-qr" width="200" height="200" loading="lazy">
+          </a>
+          <p class="rsvp-qr-hint">Aponte a câmera do celular para o código</p>
+          <button type="button" class="rsvp-btn" id="btn-rsvp-whatsapp">
+            Confirmar pelo WhatsApp
+          </button>
+        </div>
+
+        <div class="silver-quote-author">
+          Uma vida construída com fé, parceria e amor eterno.
+        </div>
+      </div>
+    </section>
+
+    <!-- LISTA DE PRESENTES CTA -->
+    <section class="gifts-cta-section fade-in-section" id="presentes-cta" aria-labelledby="gifts-cta-title">
+      <div class="gifts-cta-card">
+        <span class="gifts-cta-tag">Presentes</span>
+        <h2 id="gifts-cta-title" class="gifts-cta-title">Lista de Presentes</h2>
+        <p class="gifts-cta-text">
+          Se desejar nos presentear, preparamos uma lista especial na Shopee. Escolha com carinho o item que quiser!
+        </p>
+        <a href="presentes.html" class="gifts-cta-btn">
+          Ver lista de presentes
+        </a>
+      </div>
+    </section>
+
+    <!-- SECTION 5: LIVE COUNTDOWN -->
+    <section class="countdown-section fade-in-section" id="contagem" aria-labelledby="countdown-heading">
+      <h2 id="countdown-heading" class="countdown-title">
+        Faltam <em>para o grande dia</em>
+      </h2>
+
+      <div class="countdown-grid" role="timer" aria-live="polite">
+        <div class="countdown-card">
+          <span class="countdown-num" id="cd-days">--</span>
+          <span class="countdown-lbl">Dias</span>
+        </div>
+        <div class="countdown-card">
+          <span class="countdown-num" id="cd-hours">--</span>
+          <span class="countdown-lbl">Horas</span>
+        </div>
+        <div class="countdown-card">
+          <span class="countdown-num" id="cd-minutes">--</span>
+          <span class="countdown-lbl">Minutos</span>
+        </div>
+        <div class="countdown-card">
+          <span class="countdown-num" id="cd-seconds">--</span>
+          <span class="countdown-lbl">Segundos</span>
+        </div>
+      </div>
+
+      <div class="calendar-actions">
+        <button type="button" class="btn-wedding btn-wedding-primary" id="btn-add-calendar">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+            <line x1="16" y1="2" x2="16" y2="6"></line>
+            <line x1="8" y1="2" x2="8" y2="6"></line>
+            <line x1="3" y1="10" x2="21" y2="10"></line>
+            <line x1="12" y1="14" x2="12" y2="18"></line>
+            <line x1="10" y1="16" x2="14" y2="16"></line>
+          </svg>
+          Salvar na Minha Agenda (.ics)
+        </button>
+
+        <a
+          href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Casamento+e+Bodas+de+Prata+-+Erika+%26+Adriano&dates=20261216T220000Z/20261217T030000Z&details=Casamento+Religioso+e+Bodas+de+Prata+de+Erika+e+Adriano.+Cerim%C3%B4nia+na+Matriz+de+Santo+Ant%C3%B4nio+de+Barbalha+%28CE%29%2C+seguida+de+recep%C3%A7%C3%A3o+no+Romano%27s+Buffet%2C+Rua+Madre+Maria+Nely+Sobreira%2C+305+-+Limoeiro%2C+Juazeiro+do+Norte+%28CE%29.&location=Matriz+de+Santo+Ant%C3%B4nio+de+Barbalha+%28CE%29"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-wedding btn-wedding-secondary"
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+          Abrir no Google Agenda
+        </a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-section">
+      <img
+        src="logo.png"
+        alt="Monograma Erika e Adriano"
+        class="footer-monogram"
+        width="72"
+        height="72"
+        loading="lazy"
+      >
+      <p class="footer-signature">Com amor,</p>
+      <h3 class="footer-names">Erika &amp; Adriano</h3>
+      <p class="footer-msg">
+        Sua presença tornará nossa celebração ainda mais inesquecível. Reserve essa data em seu coração!
+      </p>
+      <div class="footer-sub">
+        16 &bull; 12 &bull; 2026 &mdash; Bodas de Prata
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Trilha sonora — loop contínuo após gesto do visitante (política de autoplay)
+      const siteAudio = document.getElementById('site-audio');
+      const audioOverlay = document.getElementById('audio-entry-overlay');
+      const audioEnterBtn = document.getElementById('btn-audio-enter');
+      const musicToggle = document.getElementById('btn-music-toggle');
+      const MUSIC_UNLOCK_KEY = 'erika-adriano-music-unlocked';
+
+      if (siteAudio) {
+        siteAudio.volume = 0.55;
+        siteAudio.muted = true;
+
+        const hideAudioOverlay = () => {
+          if (audioOverlay) audioOverlay.classList.add('is-hidden');
+        };
+
+        const showMusicToggle = () => {
+          if (musicToggle) musicToggle.hidden = false;
+        };
+
+        const syncMusicToggle = () => {
+          if (!musicToggle) return;
+          const muted = siteAudio.muted || siteAudio.paused;
+          musicToggle.classList.toggle('is-muted', muted);
+          musicToggle.setAttribute('aria-pressed', muted ? 'true' : 'false');
+          musicToggle.setAttribute(
+            'aria-label',
+            muted ? 'Ativar trilha sonora' : 'Silenciar trilha sonora'
+          );
+        };
+
+        const startMusicWithSound = () => {
+          siteAudio.muted = false;
+          siteAudio.volume = 0.55;
+          return siteAudio.play().then(() => {
+            try { sessionStorage.setItem(MUSIC_UNLOCK_KEY, '1'); } catch (_) {}
+            hideAudioOverlay();
+            showMusicToggle();
+            syncMusicToggle();
+          });
+        };
+
+        // Pré-carrega em silêncio para, ao tocar "Entrar", a música continuar sem corte
+        siteAudio.play().catch(() => {});
+
+        const onEnterSite = () => {
+          startMusicWithSound().catch(() => {});
+        };
+
+        if (audioEnterBtn) {
+          audioEnterBtn.addEventListener('click', onEnterSite);
+        }
+        if (audioOverlay) {
+          audioOverlay.addEventListener('click', (event) => {
+            if (event.target === audioOverlay) onEnterSite();
+          });
+        }
+
+        if (musicToggle) {
+          musicToggle.addEventListener('click', () => {
+            if (siteAudio.paused || siteAudio.muted) {
+              siteAudio.muted = false;
+              siteAudio.play().catch(() => {});
+            } else {
+              siteAudio.muted = true;
+            }
+            syncMusicToggle();
+          });
+        }
+
+        let skipOverlay = false;
+        try { skipOverlay = sessionStorage.getItem(MUSIC_UNLOCK_KEY) === '1'; } catch (_) {}
+
+        if (skipOverlay) {
+          hideAudioOverlay();
+          startMusicWithSound().catch(() => {
+            if (audioOverlay) audioOverlay.classList.remove('is-hidden');
+          });
+        }
+
+        window.addEventListener('pageshow', () => {
+          if (!siteAudio.muted && siteAudio.paused) {
+            siteAudio.play().catch(() => {});
+          }
+        });
+
+        siteAudio.addEventListener('play', syncMusicToggle);
+        siteAudio.addEventListener('pause', syncMusicToggle);
+        siteAudio.addEventListener('volumechange', syncMusicToggle);
+      }
+
+      // 1. Target Event Date: 16 de dezembro de 2026 às 19h00 (America/Sao_Paulo UTC-3)
+      // ISO representation with timezone offset:
+      const targetDate = new Date('2026-12-16T19:00:00-03:00').getTime();
+
+      const elDays = document.getElementById('cd-days');
+      const elHours = document.getElementById('cd-hours');
+      const elMinutes = document.getElementById('cd-minutes');
+      const elSeconds = document.getElementById('cd-seconds');
+
+      function updateCountdown() {
+        const now = Date.now();
+        const diff = targetDate - now;
+
+        if (diff <= 0) {
+          elDays.textContent = '00';
+          elHours.textContent = '00';
+          elMinutes.textContent = '00';
+          elSeconds.textContent = '00';
+          return;
+        }
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+        elDays.textContent = String(days).padStart(2, '0');
+        elHours.textContent = String(hours).padStart(2, '0');
+        elMinutes.textContent = String(minutes).padStart(2, '0');
+        elSeconds.textContent = String(seconds).padStart(2, '0');
+      }
+
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+
+      // RSVP — WhatsApp (+55 88 8874-5987)
+      const WA_PHONE = '558888745987';
+      const rsvpNameInput = document.getElementById('rsvp-name');
+      const rsvpWhatsAppBtn = document.getElementById('btn-rsvp-whatsapp');
+
+      function buildWhatsAppConfirmUrl() {
+        const name = rsvpNameInput?.value.trim() || '';
+        const message = name
+          ? `Olá! Sou ${name} e Confirmo minha presença no casamento de Erika & Adriano no dia 16/12/2026 às 19h.`
+          : 'Olá! Confirmo minha presença no casamento de Erika & Adriano no dia 16/12/2026 às 19h.';
+        return `https://wa.me/${WA_PHONE}?text=${encodeURIComponent(message)}`;
+      }
+
+      if (rsvpWhatsAppBtn) {
+        rsvpWhatsAppBtn.addEventListener('click', () => {
+          window.open(buildWhatsAppConfirmUrl(), '_blank', 'noopener,noreferrer');
+        });
+      }
+
+      // 2. IntersectionObserver for gentle section reveal
+      const animatedSections = document.querySelectorAll('.fade-in-section');
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, {
+          threshold: 0.15,
+          rootMargin: '0px 0px -40px 0px'
+        });
+
+        animatedSections.forEach(sec => observer.observe(sec));
+      } else {
+        animatedSections.forEach(sec => sec.classList.add('is-visible'));
+      }
+
+      // 3. Falling Petals Canvas (respects prefers-reduced-motion)
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const canvas = document.getElementById('petals-canvas');
+
+      if (canvas && !prefersReducedMotion) {
+        const ctx = canvas.getContext('2d');
+        let width = canvas.width = window.innerWidth;
+        let height = canvas.height = window.innerHeight;
+
+        window.addEventListener('resize', () => {
+          width = canvas.width = window.innerWidth;
+          height = canvas.height = window.innerHeight;
+        }, { passive: true });
+
+        // Palette for petals: baby pink, lilac, white, hints of soft fuchsia
+        const petalColors = [
+          'rgba(245, 198, 214, 0.72)', // baby pink
+          'rgba(192, 163, 216, 0.68)', // lilac
+          'rgba(255, 255, 255, 0.85)', // soft white
+          'rgba(201, 79, 124, 0.45)',  // delicate fuchsia hint
+          'rgba(242, 236, 247, 0.8)'   // lavender soft
+        ];
+
+        const PETAL_COUNT = window.innerWidth < 600 ? 22 : 36;
+        const petals = [];
+
+        class Petal {
+          constructor() {
+            this.reset(true);
+          }
+
+          reset(initial = false) {
+            this.x = Math.random() * width;
+            this.y = initial ? Math.random() * height : -30;
+            this.size = Math.random() * 9 + 7; // 7px to 16px
+            this.color = petalColors[Math.floor(Math.random() * petalColors.length)];
+            this.speedY = Math.random() * 0.9 + 0.6;
+            this.speedX = Math.random() * 0.7 - 0.35;
+            this.rotation = Math.random() * Math.PI * 2;
+            this.rotationSpeed = (Math.random() - 0.5) * 0.02;
+            this.sway = Math.random() * 2 * Math.PI;
+            this.swaySpeed = Math.random() * 0.02 + 0.01;
+            this.ratio = Math.random() * 0.5 + 0.6; // oval ratio
+          }
+
+          update() {
+            this.y += this.speedY;
+            this.sway += this.swaySpeed;
+            this.x += Math.sin(this.sway) * 0.7 + this.speedX;
+            this.rotation += this.rotationSpeed;
+
+            if (this.y > height + 30 || this.x < -30 || this.x > width + 30) {
+              this.reset();
+            }
+          }
+
+          draw() {
+            ctx.save();
+            ctx.translate(this.x, this.y);
+            ctx.rotate(this.rotation);
+            ctx.fillStyle = this.color;
+
+            // Draw organic petal shape using bezier curves
+            ctx.beginPath();
+            ctx.moveTo(0, -this.size);
+            ctx.bezierCurveTo(
+              this.size * this.ratio, -this.size * 0.4,
+              this.size * this.ratio, this.size * 0.6,
+              0, this.size
+            );
+            ctx.bezierCurveTo(
+              -this.size * this.ratio, this.size * 0.6,
+              -this.size * this.ratio, -this.size * 0.4,
+              0, -this.size
+            );
+            ctx.fill();
+            ctx.restore();
+          }
+        }
+
+        for (let i = 0; i < PETAL_COUNT; i++) {
+          petals.push(new Petal());
+        }
+
+        let animationFrameId;
+        function animate() {
+          ctx.clearRect(0, 0, width, height);
+          for (let i = 0; i < petals.length; i++) {
+            petals[i].update();
+            petals[i].draw();
+          }
+          animationFrameId = requestAnimationFrame(animate);
+        }
+
+        animate();
+
+        // Pause animation when page is not visible to save battery
+        document.addEventListener('visibilitychange', () => {
+          if (document.hidden) {
+            cancelAnimationFrame(animationFrameId);
+          } else {
+            animate();
+          }
+        });
+      }
+
+      // 4. Download .ICS Calendar Event
+      const btnCalendar = document.getElementById('btn-add-calendar');
+      if (btnCalendar) {
+        btnCalendar.addEventListener('click', () => {
+          const icsContent = [
+            'BEGIN:VCALENDAR',
+            'VERSION:2.0',
+            'PRODID:-//Erika e Adriano//Save the Date Bodas de Prata//PT',
+            'CALSCALE:GREGORIAN',
+            'METHOD:PUBLISH',
+            'BEGIN:VEVENT',
+            'UID:erika-adriano-20261216@bodasdeprata.com',
+            'DTSTAMP:20261017T120000Z',
+            'DTSTART:20261216T220000Z',
+            'DTEND:20261217T030000Z',
+            'SUMMARY:Casamento e Bodas de Prata - Erika & Adriano',
+            'DESCRIPTION:Casamento Religioso e celebração de 25 anos de casamento (Bodas de Prata) de Erika e Adriano.\\nCerimônia na Matriz de Santo Antônio de Barbalha (CE), seguida de recepção no Romano\\\'s Buffet, Rua Madre Maria Nely Sobreira, 305 - Limoeiro, Juazeiro do Norte (CE).',
+            'LOCATION:Matriz de Santo Antônio de Barbalha (CE)',
+            'STATUS:CONFIRMED',
+            'END:VEVENT',
+            'END:VCALENDAR'
+          ].join('\r\n');
+
+          const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+          const url = URL.createObjectURL(blob);
+          const link = document.createElement('a');
+          link.href = url;
+          link.setAttribute('download', 'casamento-erika-e-adriano.ics');
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+          URL.revokeObjectURL(url);
+        });
+      }
+    });
+  </script>
+<script>
+/* Skip artifact shell — fixed helpers served beside every artifact. */
+(function () {
+  "use strict";
+
+  var fmt = {
+    num: function (v, opts) { return new Intl.NumberFormat("pt-BR", opts || {}).format(v); },
+    brl: function (v) { return new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" }).format(v); },
+    pct: function (v) { return new Intl.NumberFormat("pt-BR", { style: "percent", maximumFractionDigits: 1 }).format(v); }
+  };
+
+  // axisFmt keeps axis tick labels short (compact notation) so long values
+  // (e.g. full BRL amounts) never clip against the plot edge.
+  function axisFmt(v) {
+    return fmt.num(v, { notation: "compact", maximumFractionDigits: 1 });
+  }
+
+  // format accepts a function OR one of the fmt names ("num" | "brl" | "pct").
+  function coerceFormat(spec) {
+    if (typeof spec === "function") return spec;
+    if (typeof spec === "string" && fmt[spec]) return fmt[spec];
+    return function (v) { return fmt.num(v); };
+  }
+
+  function accent() {
+    return getComputedStyle(document.documentElement).getPropertyValue("--accent").trim() || "#2563eb";
+  }
+  function mutedColor() {
+    return getComputedStyle(document.documentElement).getPropertyValue("--text-muted").trim() || "#5b6472";
+  }
+  function svgEl(tag, attrs) {
+    var el = document.createElementNS("http://www.w3.org/2000/svg", tag);
+    for (var k in attrs) el.setAttribute(k, attrs[k]);
+    return el;
+  }
+  function frame(el, w, h) {
+    var svg = svgEl("svg", { viewBox: "0 0 " + w + " " + h, role: "img" });
+    el.innerHTML = "";
+    el.appendChild(svg);
+    return svg;
+  }
+
+  // maxOf guards the axis scale: empty values would give -Infinity (truthy,
+  // so "|| 1" can't catch it) and a non-positive max would flip the chart.
+  function maxOf(values) {
+    var m = values.length ? Math.max.apply(null, values) : 0;
+    return m > 0 ? m : 1;
+  }
+
+  // bar(el, {labels:[], values:[], color?, format?}) — vertical bar chart.
+  function bar(el, cfg) {
+    var W = 640, H = 280, padL = 46, padB = 30, padT = 12;
+    var svg = frame(el, W, H);
+    var max = maxOf(cfg.values);
+    var n = cfg.values.length;
+    var plotW = W - padL - 12, plotH = H - padT - padB;
+    var step = plotW / n, bw = Math.min(step * 0.62, 64);
+    var color = cfg.color || accent();
+    var f = coerceFormat(cfg.format);
+    for (var g = 0; g <= 4; g++) {
+      var gy = padT + plotH - (plotH * g) / 4;
+      svg.appendChild(svgEl("line", { x1: padL, y1: gy, x2: W - 12, y2: gy, stroke: "currentColor", "stroke-opacity": 0.08 }));
+      var lbl = svgEl("text", { x: padL - 8, y: gy + 4, "text-anchor": "end", "font-size": 10, fill: mutedColor() });
+      lbl.textContent = axisFmt((max * g) / 4);
+      svg.appendChild(lbl);
+    }
+    cfg.values.forEach(function (v, i) {
+      var bh = Math.max(0, (v / max) * plotH);
+      var x = padL + i * step + (step - bw) / 2;
+      var y = padT + plotH - bh;
+      var r = svgEl("rect", { x: x, y: y, width: bw, height: bh, rx: 4, fill: color });
+      var t = svgEl("title", {});
+      t.textContent = cfg.labels[i] + ": " + f(v);
+      r.appendChild(t);
+      svg.appendChild(r);
+      var tx = svgEl("text", { x: x + bw / 2, y: H - 10, "text-anchor": "middle", "font-size": 11, fill: mutedColor() });
+      tx.textContent = cfg.labels[i];
+      svg.appendChild(tx);
+    });
+  }
+
+  // line(el, {labels:[], values:[], color?, format?}) — single-series line.
+  function line(el, cfg) {
+    var W = 640, H = 280, padL = 46, padB = 30, padT = 12;
+    var svg = frame(el, W, H);
+    var max = maxOf(cfg.values);
+    var n = cfg.values.length;
+    var plotW = W - padL - 16, plotH = H - padT - padB;
+    var color = cfg.color || accent();
+    var f = coerceFormat(cfg.format);
+    for (var g = 0; g <= 4; g++) {
+      var gy = padT + plotH - (plotH * g) / 4;
+      svg.appendChild(svgEl("line", { x1: padL, y1: gy, x2: W - 16, y2: gy, stroke: "currentColor", "stroke-opacity": 0.08 }));
+      var lbl = svgEl("text", { x: padL - 8, y: gy + 4, "text-anchor": "end", "font-size": 10, fill: mutedColor() });
+      lbl.textContent = axisFmt((max * g) / 4);
+      svg.appendChild(lbl);
+    }
+    var pts = cfg.values.map(function (v, i) {
+      var x = padL + (n === 1 ? plotW / 2 : (plotW * i) / (n - 1));
+      var y = padT + plotH - (v / max) * plotH;
+      return [x, y];
+    });
+    var d = pts.map(function (p, i) { return (i ? "L" : "M") + p[0].toFixed(1) + " " + p[1].toFixed(1); }).join(" ");
+    svg.appendChild(svgEl("path", { d: d, fill: "none", stroke: color, "stroke-width": 2, "stroke-linejoin": "round" }));
+    pts.forEach(function (p, i) {
+      var c = svgEl("circle", { cx: p[0], cy: p[1], r: 3.5, fill: color });
+      var t = svgEl("title", {});
+      t.textContent = cfg.labels[i] + ": " + f(cfg.values[i]);
+      c.appendChild(t);
+      svg.appendChild(c);
+      var tx = svgEl("text", { x: p[0], y: H - 10, "text-anchor": "middle", "font-size": 11, fill: mutedColor() });
+      tx.textContent = cfg.labels[i];
+      svg.appendChild(tx);
+    });
+  }
+
+  // donut(el, {labels:[], values:[], colors?}) — donut with center total.
+  function donut(el, cfg) {
+    var W = 320, H = 280, cx = W / 2, cy = H / 2, R = 92, r = 58;
+    var svg = frame(el, W, H);
+    var total = cfg.values.reduce(function (a, b) { return a + b; }, 0) || 1;
+    var palette = cfg.colors || [accent(), "#1baf7a", "#eda100", "#e34948", "#4a3aa7", "#e87ba4"];
+    var a0 = -Math.PI / 2;
+    cfg.values.forEach(function (v, i) {
+      var a1 = a0 + (v / total) * Math.PI * 2;
+      var large = a1 - a0 > Math.PI ? 1 : 0;
+      var p = ["M", cx + R * Math.cos(a0), cy + R * Math.sin(a0),
+        "A", R, R, 0, large, 1, cx + R * Math.cos(a1), cy + R * Math.sin(a1),
+        "L", cx + r * Math.cos(a1), cy + r * Math.sin(a1),
+        "A", r, r, 0, large, 0, cx + r * Math.cos(a0), cy + r * Math.sin(a0), "Z"].join(" ");
+      var path = svgEl("path", { d: p, fill: palette[i % palette.length] });
+      var t = svgEl("title", {});
+      t.textContent = cfg.labels[i] + ": " + fmt.num(v) + " (" + fmt.pct(v / total) + ")";
+      path.appendChild(t);
+      svg.appendChild(path);
+      a0 = a1;
+    });
+    var center = svgEl("text", { x: cx, y: cy + 5, "text-anchor": "middle", "font-size": 20, "font-weight": 650, fill: "currentColor" });
+    center.textContent = fmt.num(total);
+    svg.appendChild(center);
+  }
+
+  window.skipShell = { fmt: fmt };
+  window.skipChart = { bar: bar, line: line, donut: donut };
+})();
+
+</script>
+</body>
+</html>

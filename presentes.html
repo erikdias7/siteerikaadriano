@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Presentes — Erika &amp; Adriano</title>
+  <meta name="description" content="Lista de presentes do casamento de Erika e Adriano.">
+  <meta property="og:title" content="Lista de Presentes — Erika &amp; Adriano">
+  <meta property="og:description" content="Escolha um presente com carinho na nossa lista da Shopee.">
+  <meta property="og:image" content="https://thriving-mermaid-172fc1.netlify.app/base.jpeg">
+  <meta property="og:url" content="https://thriving-mermaid-172fc1.netlify.app/presentes.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Great+Vibes&display=swap">
+  <style>
+    :root {
+      --color-rose-baby: #F5C6D6;
+      --color-fuchsia: #C94F7C;
+      --color-lilac: #C0A3D8;
+      --color-copper: #B76E58;
+      --color-copper-dark: #8E4C38;
+      --color-copper-light: #E7C9BE;
+      --color-text-main: #4A3B45;
+      --color-text-muted: #6C5B66;
+      --color-bg-page: #FDFBF8;
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-script: 'Great Vibes', cursive;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      padding: 0;
+      background:
+        radial-gradient(ellipse at 12% 10%, rgba(245, 198, 214, 0.3) 0%, transparent 50%),
+        radial-gradient(ellipse at 88% 30%, rgba(192, 163, 216, 0.22) 0%, transparent 48%),
+        var(--color-bg-page);
+      color: var(--color-text-main);
+      font-family: var(--font-serif);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; }
+
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1.25rem 1.15rem 4rem;
+    }
+
+    .top-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      text-decoration: none;
+      font-size: 0.95rem;
+      color: var(--color-copper-dark);
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    .back-link:hover { border-bottom-color: var(--color-copper); }
+
+    .brand {
+      font-family: var(--font-script);
+      font-size: 1.55rem;
+      color: var(--color-copper-dark);
+    }
+
+    .hero {
+      text-align: center;
+      padding: 1rem 0.5rem 2rem;
+    }
+
+    .hero-tag {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.26em;
+      text-transform: uppercase;
+      color: var(--color-copper);
+      margin-bottom: 0.5rem;
+    }
+
+    .hero h1 {
+      font-family: var(--font-script);
+      font-size: clamp(2.4rem, 7vw, 3.4rem);
+      font-weight: 400;
+      color: var(--color-copper-dark);
+      margin: 0 0 0.75rem;
+      line-height: 1.1;
+    }
+
+    .hero p {
+      max-width: 560px;
+      margin: 0 auto;
+      color: var(--color-text-muted);
+      font-size: 1.05rem;
+    }
+
+    .notice {
+      max-width: 720px;
+      margin: 0 auto 2.25rem;
+      padding: 1.25rem 1.35rem;
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid rgba(183, 110, 88, 0.28);
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(74, 59, 69, 0.06);
+    }
+
+    .notice h2 {
+      margin: 0 0 0.65rem;
+      font-size: 1.15rem;
+      color: var(--color-copper-dark);
+      letter-spacing: 0.04em;
+    }
+
+    .notice ol {
+      margin: 0;
+      padding-left: 1.2rem;
+      color: var(--color-text-muted);
+      font-size: 0.98rem;
+    }
+
+    .notice li { margin-bottom: 0.35rem; }
+    .notice strong { color: var(--color-text-main); }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .gift-card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      background: rgba(255, 255, 255, 0.95);
+      border: 1px solid rgba(183, 110, 88, 0.22);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 10px 28px rgba(74, 59, 69, 0.07);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.25s ease;
+    }
+
+    .gift-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 14px 34px rgba(74, 59, 69, 0.12);
+    }
+
+    .gift-card.is-claimed {
+      opacity: 0.72;
+      filter: grayscale(0.25);
+    }
+
+    .gift-card.is-claimed:hover { transform: none; }
+
+    .gift-media {
+      position: relative;
+      aspect-ratio: 1 / 1;
+      background: #f7f2ef;
+      overflow: hidden;
+    }
+
+    .gift-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .claimed-badge {
+      position: absolute;
+      top: 0.75rem;
+      left: 0.75rem;
+      z-index: 2;
+      padding: 0.3rem 0.65rem;
+      border-radius: 999px;
+      background: rgba(74, 59, 69, 0.88);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .gift-body {
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      padding: 1rem 1rem 1.15rem;
+      flex: 1;
+    }
+
+    .gift-title {
+      margin: 0;
+      font-size: 1.05rem;
+      font-weight: 600;
+      line-height: 1.35;
+      color: var(--color-text-main);
+      min-height: 2.7em;
+    }
+
+    .gift-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+      margin-top: auto;
+    }
+
+    .btn-shopee {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      padding: 0.65rem 1rem;
+      border-radius: 999px;
+      background: var(--color-copper);
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      transition: background 0.2s ease;
+    }
+
+    .btn-shopee:hover { background: var(--color-copper-dark); color: #fff; }
+
+    .gift-card.is-claimed .btn-shopee {
+      pointer-events: none;
+      background: #b7a9a3;
+    }
+
+    .claim-row {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      padding: 0.55rem 0.7rem;
+      border: 1px solid var(--color-copper-light);
+      border-radius: 12px;
+      background: rgba(253, 251, 248, 0.9);
+    }
+
+    .claim-row input {
+      width: 18px;
+      height: 18px;
+      accent-color: var(--color-copper);
+      flex-shrink: 0;
+    }
+
+    .claim-row label {
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .gift-card.is-claimed .claim-row {
+      background: rgba(183, 110, 88, 0.08);
+    }
+
+    .gift-card.is-claimed .claim-row label {
+      color: var(--color-copper-dark);
+      font-weight: 600;
+    }
+
+    /* Modal */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 80;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.25rem;
+      background: rgba(74, 59, 69, 0.45);
+      backdrop-filter: blur(4px);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.25s ease, visibility 0.25s ease;
+    }
+
+    .modal-overlay.is-open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .modal {
+      width: min(100%, 420px);
+      background: #fff;
+      border-radius: 18px;
+      padding: 1.75rem 1.5rem 1.5rem;
+      text-align: center;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
+      transform: translateY(10px);
+      transition: transform 0.25s ease;
+    }
+
+    .modal-overlay.is-open .modal { transform: translateY(0); }
+
+    .modal h3 {
+      margin: 0 0 0.65rem;
+      font-family: var(--font-script);
+      font-size: 2rem;
+      font-weight: 400;
+      color: var(--color-copper-dark);
+    }
+
+    .modal p {
+      margin: 0 0 0.85rem;
+      color: var(--color-text-muted);
+      font-size: 1rem;
+    }
+
+    .modal-item {
+      margin: 0 0 1.35rem;
+      padding: 0.75rem 0.9rem;
+      background: rgba(245, 198, 214, 0.22);
+      border-radius: 12px;
+      color: var(--color-text-main);
+      font-weight: 600;
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+
+    .modal-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+
+    .modal-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.75rem 1.2rem;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      font-family: var(--font-serif);
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    .modal-btn-primary {
+      background: #25D366;
+      color: #fff;
+    }
+
+    .modal-btn-primary:hover { background: #1ebe57; color: #fff; }
+
+    .modal-btn-secondary {
+      background: transparent;
+      color: var(--color-copper-dark);
+      border: 1px solid var(--color-copper-light);
+    }
+
+    .modal-btn-secondary:hover {
+      background: rgba(183, 110, 88, 0.08);
+    }
+
+    .footer-note {
+      text-align: center;
+      margin-top: 2.75rem;
+      color: var(--color-text-muted);
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 520px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="top-nav">
+      <a class="back-link" href="index.html">
+        ← Voltar ao convite
+      </a>
+      <div class="brand">Erika &amp; Adriano</div>
+    </div>
+
+    <header class="hero">
+      <span class="hero-tag">Com carinho</span>
+      <h1>Lista de Presentes</h1>
+      <p>Escolha um item na Shopee. Sua generosidade torna nosso dia ainda mais especial.</p>
+    </header>
+
+    <aside class="notice" aria-label="Instruções">
+      <h2>Antes de comprar</h2>
+      <ol>
+        <li><strong>Adicione o item ao carrinho</strong> na Shopee antes de finalizar a compra.</li>
+        <li>Depois de comprar, <strong>marque a caixinha</strong> ao lado do item para indicar que já foi presenteado.</li>
+        <li>Ao marcar, pediremos que você <strong>confirme pelo WhatsApp</strong> o item escolhido.</li>
+        <li>Itens já confirmados ficam bloqueados para os demais convidados.</li>
+      </ol>
+    </aside>
+
+    <div class="grid" id="gifts-grid"></div>
+
+    <p class="footer-note">Com amor, Erika &amp; Adriano · 16.12.2026</p>
+  </div>
+
+  <div class="modal-overlay" id="claim-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal">
+      <h3 id="modal-title">Presente escolhido!</h3>
+      <p>Confirme pelo WhatsApp que você comprou este item, para reservarmos na lista:</p>
+      <div class="modal-item" id="modal-item-name"></div>
+      <div class="modal-actions">
+        <a class="modal-btn modal-btn-primary" id="modal-whatsapp" target="_blank" rel="noopener noreferrer">
+          Confirmar no WhatsApp
+        </a>
+        <button type="button" class="modal-btn modal-btn-secondary" id="modal-cancel">
+          Cancelar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const WA_PHONE = '558888745987';
+    const CLAIMS_KEY = 'erika-adriano-gift-claims-v1';
+    const CLAIMS_API = '/api/gift-claims';
+
+    const GIFTS = [
+      {
+        id: 'panelas-10',
+        title: 'Jogo de panelas 10 peças antiaderente — várias cores',
+        url: 'https://s.shopee.com.br/40hYmarYrh',
+        image: 'img/Jogo de Panelas 10 Peças.webp'
+      },
+      {
+        id: 'cafeteira-philco',
+        title: 'Cafeteira Elétrica Programável Painel Digital Philco PCFD40-1 1,6L Preta / Inox',
+        url: 'https://s.shopee.com.br/50aOjSi7iM?share_channel_code=1',
+        image: 'img/Cafeteira 40 Cafezinhos.webp'
+      },
+      {
+        id: 'robo-aspirador',
+        title: 'Robô aspirador eletrônico inteligente sem fio com sensor',
+        url: 'https://s.shopee.com.br/70LAMuZ4eS',
+        image: 'img/Robô Aspirador Eletrônico Inteligente.webp'
+      },
+      {
+        id: 'kit-cafe-bambu',
+        title: 'Kit café da tarde e manhã bambu — jarra, chaleira, potes e boleira',
+        url: 'https://s.shopee.com.br/40hYnr8JUb',
+        image: 'img/Kit Café da Tarde e Manhã.webp'
+      },
+      {
+        id: 'mixer-coibeu',
+        title: 'Mixer Inox 5em1 600W — triturador, batedor e espumador (COIBEU)',
+        url: 'https://s.shopee.com.br/7VHQy0AzTK',
+        image: 'img/COIBEU Mixer Inox 5em1 600W.webp'
+      },
+      {
+        id: 'toalha-dianneli',
+        title: 'Jogo de toalha 5 peças Gigante Paris Dianneli — cinza granito',
+        url: 'https://s.shopee.com.br/1BNNSTHaUn',
+        image: 'img/Jogo De Toalha.webp'
+      },
+      {
+        id: 'parafusadeira-48v',
+        title: 'Kit Parafusadeira Furadeira de Impacto 48v 2 Baterias Com Maleta e Acessórios Completo',
+        url: 'https://s.shopee.com.br/2LZdYxi6k8?share_channel_code=1',
+        image: 'img/Parafusadeira Furadeira de Impacto.webp'
+      },
+      {
+        id: 'boleira-wolff',
+        title: 'Boleira Wolff Pearl grande 3 em 1 — transparente com bolinhas',
+        url: 'https://s.shopee.com.br/9V2gOwRjN1?share_channel_code=1',
+        image: 'img/Boleira Wolff Pearl Grande.webp'
+      },
+      {
+        id: 'cobre-leito-paris',
+        title: 'Kit cobre leito dupla face Paris Queen 08 peças',
+        url: 'https://s.shopee.com.br/6L5edCS0Jq?share_channel_code=1',
+        image: 'img/Kit Cobre Leito Dupla Face.webp'
+      },
+      {
+        id: 'rede-casal',
+        title: 'Rede de descanso casal reforçada',
+        url: 'https://s.shopee.com.br/70LLQXeAW8?share_channel_code=1',
+        image: 'img/Rede Descanso.webp'
+      },
+      {
+        id: 'chaleira-brinox',
+        title: 'Chaleira com apito aço inox 2,7L Brinox Roma',
+        url: 'https://s.shopee.com.br/1gJp4uL6e1?share_channel_code=1',
+        image: 'img/Chaleira Com Apito.webp'
+      },
+      {
+        id: 'suporte-pratos',
+        title: 'Suporte duplo para cozinha — organizador de pratos, tigelas e talheres',
+        url: 'https://s.shopee.com.br/9pfWo4umDl?share_channel_code=1',
+        image: 'img/Escorredor de Louças.webp'
+      },
+      {
+        id: 'compressor-ar',
+        title: 'Compressor de ar portátil digital recarregável com LED',
+        url: 'https://s.shopee.com.br/60SoFoyAXn?share_channel_code=1',
+        image: 'img/Compressor de Ar Portátil.webp'
+      },
+      {
+        id: 'kit-ferramentas',
+        title: 'Kit ferramentas mecânica 108 peças profissional com maleta',
+        url: 'https://s.shopee.com.br/AAING4wSyt?share_channel_code=1',
+        image: 'img/Kit Ferramentas Mecânica 108.webp'
+      }
+    ];
+
+    const grid = document.getElementById('gifts-grid');
+    const modal = document.getElementById('claim-modal');
+    const modalItemName = document.getElementById('modal-item-name');
+    const modalWhatsapp = document.getElementById('modal-whatsapp');
+    const modalCancel = document.getElementById('modal-cancel');
+    let claims = {};
+    let pendingGift = null;
+
+    function readLocalClaims() {
+      try {
+        return JSON.parse(localStorage.getItem(CLAIMS_KEY) || '{}') || {};
+      } catch {
+        return {};
+      }
+    }
+
+    function writeLocalClaims(next) {
+      claims = next;
+      try { localStorage.setItem(CLAIMS_KEY, JSON.stringify(next)); } catch (_) {}
+    }
+
+    function mergeClaims(remote) {
+      const local = readLocalClaims();
+      const merged = { ...local, ...(remote || {}) };
+      writeLocalClaims(merged);
+      return merged;
+    }
+
+    async function fetchRemoteClaims() {
+      try {
+        const res = await fetch(CLAIMS_API, { cache: 'no-store' });
+        if (!res.ok) throw new Error('offline');
+        const data = await res.json();
+        return mergeClaims(data);
+      } catch {
+        claims = readLocalClaims();
+        return claims;
+      }
+    }
+
+    async function claimRemote(gift) {
+      try {
+        const res = await fetch(CLAIMS_API, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ id: gift.id, title: gift.title })
+        });
+        const data = await res.json().catch(() => ({}));
+        if (data.claims) mergeClaims(data.claims);
+        if (res.status === 409) return { ok: false, alreadyClaimed: true };
+        if (!res.ok) return { ok: false };
+        return { ok: true };
+      } catch {
+        const next = { ...readLocalClaims(), [gift.id]: { title: gift.title, at: new Date().toISOString() } };
+        writeLocalClaims(next);
+        return { ok: true, localOnly: true };
+      }
+    }
+
+    function createCard(gift) {
+      const claimed = Boolean(claims[gift.id]);
+      const card = document.createElement('article');
+      card.className = 'gift-card' + (claimed ? ' is-claimed' : '');
+      card.dataset.id = gift.id;
+
+      card.innerHTML = `
+        <div class="gift-media">
+          ${claimed ? '<span class="claimed-badge">Já comprado</span>' : ''}
+          <img src="${gift.image}" alt="${gift.title}" loading="lazy" width="400" height="400">
+        </div>
+        <div class="gift-body">
+          <h2 class="gift-title">${gift.title}</h2>
+          <div class="gift-actions">
+            <a class="btn-shopee" href="${gift.url}" target="_blank" rel="noopener noreferrer">
+              Ver na Shopee
+            </a>
+            <div class="claim-row">
+              <input type="checkbox" id="claim-${gift.id}" ${claimed ? 'checked disabled' : ''}>
+              <label for="claim-${gift.id}">${claimed ? 'Presente já reservado' : 'Já comprei este item'}</label>
+            </div>
+          </div>
+        </div>
+      `;
+
+      const checkbox = card.querySelector('input[type="checkbox"]');
+      checkbox.addEventListener('change', () => {
+        if (!checkbox.checked) return;
+        if (claims[gift.id]) {
+          checkbox.checked = true;
+          checkbox.disabled = true;
+          return;
+        }
+        checkbox.checked = false;
+        openClaimModal(gift);
+      });
+
+      return card;
+    }
+
+    function renderCards() {
+      grid.innerHTML = '';
+      GIFTS.forEach((gift) => grid.appendChild(createCard(gift)));
+    }
+
+    function openClaimModal(gift) {
+      pendingGift = gift;
+      modalItemName.textContent = gift.title;
+      const message = `Olá! Acabei de comprar o presente "${gift.title}" da lista de Erika e Adriano e gostaria de confirmar.`;
+      modalWhatsapp.href = `https://wa.me/${WA_PHONE}?text=${encodeURIComponent(message)}`;
+      modal.hidden = false;
+      requestAnimationFrame(() => modal.classList.add('is-open'));
+    }
+
+    function closeClaimModal() {
+      modal.classList.remove('is-open');
+      pendingGift = null;
+      setTimeout(() => { modal.hidden = true; }, 250);
+    }
+
+    async function confirmClaim() {
+      if (!pendingGift) return;
+      const gift = pendingGift;
+      const result = await claimRemote(gift);
+      if (result.alreadyClaimed) {
+        alert('Este item acabou de ser reservado por outra pessoa. Escolha outro presente 💛');
+        await fetchRemoteClaims();
+        renderCards();
+        closeClaimModal();
+        return;
+      }
+      const next = { ...readLocalClaims(), [gift.id]: { title: gift.title, at: new Date().toISOString() } };
+      writeLocalClaims(next);
+      renderCards();
+      closeClaimModal();
+    }
+
+    modalCancel.addEventListener('click', closeClaimModal);
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeClaimModal();
+    });
+    modalWhatsapp.addEventListener('click', () => {
+      // Marca como reservado ao confirmar no WhatsApp
+      confirmClaim();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modal.classList.contains('is-open')) closeClaimModal();
+    });
+
+    (async () => {
+      await fetchRemoteClaims();
+      renderCards();
+      // Atualiza periodicamente quando estiver no Netlify
+      setInterval(async () => {
+        const before = JSON.stringify(claims);
+        await fetchRemoteClaims();
+        if (JSON.stringify(claims) !== before) renderCards();
+      }, 20000);
+    })();
+  </script>
+</body>
+</html>
